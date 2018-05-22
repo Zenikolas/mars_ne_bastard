@@ -33,11 +33,22 @@ html, body {
 
 .text {
     .general_title;
-    font-family: 'Amatic SC', cursive;
-    /*font-size: 90px;*/
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
 }
 
 .data {
     .general_title;
     font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid darkblue;
+    margin: 3em auto;
+    width: 30%;
+    padding: 0;
 }
