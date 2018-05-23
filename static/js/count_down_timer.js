@@ -17,7 +17,7 @@ let countDown = new Date('Jun 3, 2018 10:45:00').getTime(),
       seconds = Math.floor((distance % (minute)) / second);
 
       if (distance < 0) {
-          countdown.innerHTML = "<h1 class=\"title general_title big_title\">We Got Married!!</h1>"
+          countdown.innerHTML = "<h1 class=\"title general_title big_title\">Just married!</h1>"
       } else {
 	    countdown.innerHTML = "<ul class=\"box_block general_title text\">"
             + "<li><span>" + days + "</span>Days</li>"
