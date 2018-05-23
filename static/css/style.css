@@ -14,11 +14,6 @@ html, body {
     min-height: 100%;
 }
 
-.general_title {
-    color: darkblue;
-    text-align: center;
-}
-
 .big_title {
     font-size: 90px;
 }
@@ -41,6 +36,11 @@ html, body {
     .general_title;
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
+}
+
+.title,.text,.data{
+    color: darkblue;
+    text-align: center;
 }
 
 hr {
