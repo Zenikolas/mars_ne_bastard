@@ -11,7 +11,7 @@ html, body {
     background-color: ivory;
     background-image: url(https://static.xoedge.com/xo-guest-services/assets/guest/themes/birch_monarch/background_image-ff1057573f3dfd9e5f5682a229bd0d28.png);
     background-repeat: no-repeat;
-    height: 100%;
+    min-height: 100%;
 }
 
 .general_title {
@@ -48,7 +48,30 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid darkblue;
-    margin: 3em auto;
+    margin: 20px auto;
     width: 30%;
     padding: 0;
+}
+
+.box_block {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.box_block li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-transform: uppercase;
+}
+
+.box_block li span {
+  display: block;
+  font-size: 4.5rem;
 }

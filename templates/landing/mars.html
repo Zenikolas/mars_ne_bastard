@@ -18,6 +18,7 @@
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/count_down_timer.js' %}"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Great+Vibes|Libre+Baskerville:400i,700" rel="stylesheet">
 
@@ -29,9 +30,16 @@
         <div class="top-container container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h1 class="title general_title big_title">Nikolay ++ Maria</h1>
+                    <h1 class="title general_title big_title">Nikolay and Maria</h1>
                     <h3 class="text general_title">invite you to celebrate their marriage</h3>
                     <h2 class="data general_title">3TH OF JUNE 2018</h2>
+                    <hr/>
+                    <ul class="box_block general_title text">
+                        <li class="padding-left"><span id="days"></span>days</li>
+                        <li><span id="hours"></span>Hours</li>
+                        <li><span id="minutes"></span>Minutes</li>
+                        <li><span id="seconds"></span>Seconds</li>
+                    </ul>
                     <hr/>
                     <h3 class="text general_title">Time of the ceremony 10:45</h3>
                     <h3 class="data general_title">Wedding Palace №1</h3>
@@ -40,7 +48,6 @@
                     <h3 class="text general_title">Time of the party 14:30</h3>
                     <h3 class="data general_title">Restaurant "Vesenniy"</h3>
                     <h3 class="data general_title">Pr. Rimskyi-Koraskova str. 83/85</h3>
-                    <h3 class="text general_title">Timer:</h3>
                 </div>
             </div>
         </div>
