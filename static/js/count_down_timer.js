@@ -3,21 +3,28 @@ const second = 1000,
       hour = minute * 60,
       day = hour * 24;
 
-let countDown = new Date('Jun 3, 2018 00:00:00').getTime(),
+countdown = document.getElementById("count_down_timer");
+
+let countDown = new Date('Jun 3, 2018 10:45:00').getTime(),
     x = setInterval(function() {
 
       let now = new Date().getTime(),
           distance = countDown - now;
 
-      document.getElementById('days').innerText = Math.floor(distance / (day)),
-        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+      days = Math.floor(distance / (day));
+      hours = Math.floor((distance % (day)) / (hour));
+      minutes = Math.floor((distance % (hour)) / (minute));
+      seconds = Math.floor((distance % (minute)) / second);
 
-      //do something later when date is reached
-      //if (distance < 0) {
-      //  clearInterval(x);
-      //  'IT'S MY BIRTHDAY!;
-      //}
+      if (distance < 0) {
+          countdown.innerHTML = "<h1 class=\"title general_title big_title\">We Got Married!!</h1>"
+      } else {
+	    countdown.innerHTML = "<ul class=\"box_block general_title text\">"
+            + "<li><span>" + days + "</span>Days</li>"
+            + "<li><span>" + hours + "</span>Hours</li>"
+            + "<li><span>" + minutes + "</span>Minutes</li>"
+            + "<li><span>" + seconds + "</span>Seconds</li>"
+            + "</ul>";
+      }
 
     }, second)
