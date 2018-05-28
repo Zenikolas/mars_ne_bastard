@@ -10,7 +10,7 @@ html, body {
 }
 
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 320px) {
 .top-container {
     padding-top: 30%;
     max-width: 100%;
