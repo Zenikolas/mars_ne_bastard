@@ -9,17 +9,27 @@ html, body {
     margin: 0 auto;
 }
 
+
+@media screen and (max-device-width: 480px) {
+.top-container {
+    padding-top: 30%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+}
+
 .general-container {
     background-color: ivory;
     background-image: url(https://static.xoedge.com/xo-guest-services/assets/guest/themes/birch_monarch/background_image-ff1057573f3dfd9e5f5682a229bd0d28.png);
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: cover;
     min-height: 100%;
-    min-width: 320px;
+   /* min-width: 320px;*/
 }
 
 .big_title {
-    font-size: 90px;
+    font-size: 5.5em;
 }
 
 .title {
