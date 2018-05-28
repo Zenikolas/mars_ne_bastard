@@ -10,11 +10,9 @@ html, body {
 }
 
 
-@media screen and (max-device-width: 320px) {
+@media screen and (max-device-width: 480px) {
 .top-container {
     padding-top: 30%;
-    max-width: 100%;
-    margin: 0 auto;
 }
 }
 
@@ -83,6 +81,13 @@ hr {
   padding-bottom: 0;
   padding-top: 0;
   text-transform: uppercase;
+}
+
+@media screen and (max-device-width: 480px) {
+.box_block li {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
 }
 
 .box_block li span {
